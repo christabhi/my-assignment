@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import io.swagger.exceptions.ErrorResponse;
 import io.swagger.model.Account;
-import io.swagger.model.ErrorResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
@@ -33,20 +33,20 @@ public interface AccountsApi {
 	@ApiResponses(value = {
 			@ApiResponse(responseCode = "200", description = "Successful operation", content = @Content(schema = @Schema(implementation = Account.class))),
 
-			@ApiResponse(responseCode = "400", description = "Bad request", content = @Content(schema = @Schema(implementation = ErrorResponse.class))),
+			@ApiResponse(responseCode = "400", description = "Bad request"),
 
-			@ApiResponse(responseCode = "404", description = "No record found", content = @Content(schema = @Schema(implementation = ErrorResponse.class))) })
+			@ApiResponse(responseCode = "404", description = "No record found") })
 	@RequestMapping(value = "/accounts/{accountNumber}", produces = { "application/json" }, method = RequestMethod.GET)
 	ResponseEntity<Account> accountByAccountNumber(
-			@Parameter(in = ParameterIn.PATH, description = "Enter valid account number", required = true, schema = @Schema()) @PathVariable("accountNumber") String accountNumber);
+			@Parameter(in = ParameterIn.PATH, description = "Enter valid account number", required = true, schema = @Schema()) @Valid @PathVariable("accountNumber") String accountNumber);
 
 	@Operation(summary = "Get the list of accounts with filtering feature", description = "", tags = {})
 	@ApiResponses(value = {
 			@ApiResponse(responseCode = "200", description = "Successful operation", content = @Content(array = @ArraySchema(schema = @Schema(implementation = Account.class)))),
 
-			@ApiResponse(responseCode = "400", description = "Bad request", content = @Content(schema = @Schema(implementation = ErrorResponse.class))),
+			@ApiResponse(responseCode = "400", description = "Bad request"),
 
-			@ApiResponse(responseCode = "404", description = "No record found", content = @Content(schema = @Schema(implementation = ErrorResponse.class))) })
+			@ApiResponse(responseCode = "404", description = "No record found") })
 	@RequestMapping(value = "/accounts", produces = { "application/json" }, method = RequestMethod.GET)
 	ResponseEntity<List<Account>> accountList(
 			@Parameter(in = ParameterIn.QUERY, description = "Account type values that need to be consider for filters", schema = @Schema()) @Valid @RequestParam(value = "accountType", required = false) String accountType,

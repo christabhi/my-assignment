@@ -1,8 +1,7 @@
-package io.swagger.model;
+package io.swagger.exceptions;
 
+import java.util.Date;
 import java.util.Objects;
-
-import org.springframework.validation.annotation.Validated;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -11,10 +10,11 @@ import io.swagger.v3.oas.annotations.media.Schema;
 /**
  * ErrorResponse
  */
-@Validated
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-23T04:43:46.613Z[GMT]")
-
 public class ErrorResponse {
+	
+	@JsonProperty("timestamp")
+	private Date timestamp;
 	
 	@JsonProperty("code")
 	private Integer code = null;
@@ -25,9 +25,12 @@ public class ErrorResponse {
 	@JsonProperty("details")
 	private String details = null;
 
-	public ErrorResponse code(Integer code) {
+	public ErrorResponse(Date timestamp, int code, String message, String details) {
+		super();
+		this.timestamp = timestamp;
 		this.code = code;
-		return this;
+		this.message = message;
+		this.details = details;
 	}
 
 	/**

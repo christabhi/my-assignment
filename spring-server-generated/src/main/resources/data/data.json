@@ -1,0 +1,230 @@
+[
+	{
+		"id": 1,
+		"accountNumber": "01100114192",
+		"accountType": "CHECKING",
+		"accountHolderName": "Abhishek",
+		"bankName": "HDFC Bank",
+		"country": "IN",
+		"currency": "INR",
+		"customer": {
+			"id": 1,
+			"firstName": "Abhishek",
+			"lastName": "Verma",
+			"email": "abhishekTest@gmail.com",
+			"phone": "1111111111"
+		},
+		"bankCode": "011",
+		"branchCode": "001",
+		"status": "NEW"
+	},
+	{
+		"id": 2,
+		"accountNumber": "01100218336",
+		"accountType": "SAVING",
+		"accountHolderName": "Alok",
+		"bankName": "HDFC Bank",
+		"country": "IN",
+		"currency": "INR",
+		"customer": {
+			"id": 2,
+			"firstName": "Alok",
+			"lastName": "Jain",
+			"email": "aloktest@gamil.com",
+			"phone": "2222222222"
+		},
+		"bankCode": "011",
+		"branchCode": "002",
+		"status": "NEW"
+	},
+	{
+		"id": 3,
+		"accountNumber": "01100318336",
+		"accountType": "SAVING",
+		"accountHolderName": "Prashant",
+		"bankName": "HDFC Bank",
+		"country": "HK",
+		"currency": "HKD",
+		"customer": {
+			"id": 3,
+			"firstName": "Prashant",
+			"lastName": "",
+			"email": "prashanttest@gamil.com",
+			"phone": "3333333333"
+		},
+		"bankCode": "011",
+		"branchCode": "003",
+		"status": "NEW"
+	},
+	{
+		"id": 4,
+		"accountNumber": "01100218336",
+		"accountType": "SAVING",
+		"accountHolderName": "Rishi",
+		"bankName": "HDFC Bank",
+		"country": "USA",
+		"currency": "USD",
+		"customer": {
+			"id": 4,
+			"firstName": "Rishi",
+			"lastName": "Raj",
+			"email": "rishiTest@gmail.com",
+			"phone": "4444444444"
+		},
+		"bankCode": "011",
+		"branchCode": "001",
+		"status": "NEW"
+	},
+	{
+		"id": 5,
+		"accountNumber": "01100118336",
+		"accountType": "SAVING",
+		"accountHolderName": "Hasib",
+		"bankName": "HDFC Bank",
+		"country": "UK",
+		"currency": "GBP",
+		"customer": {
+			"id": 5,
+			"firstName": "Hasib",
+			"lastName": "",
+			"email": "hasibtest@gamil.com",
+			"phone": "5555555555"
+		},
+		"bankCode": "011",
+		"branchCode": "001",
+		"status": "VERIFIED"
+	},
+	{
+		"id": 6,
+		"accountNumber": "01100318336",
+		"accountType": "SAVING",
+		"accountHolderName": "Prashant",
+		"bankName": "HDFC Bank",
+		"country": "HK",
+		"currency": "HKD",
+		"customer": {
+			"id": 6,
+			"firstName": "Prashant",
+			"lastName": "",
+			"email": "prashanttest@gamil.com",
+			"phone": "6666666666"
+		},
+		"bankCode": "011",
+		"branchCode": "003",
+		"status": "VERIFICATION_FAILED"
+	},
+	{
+		"id": 7,
+		"accountNumber": "01100418336",
+		"accountType": "CHECKING",
+		"accountHolderName": "Abhinav",
+		"bankName": "HDFC Bank",
+		"country": "IN",
+		"currency": "INR",
+		"customer": {
+			"id": 7,
+			"firstName": "Abhinav",
+			"lastName": "Verma",
+			"email": "abhinavTest@gmail.com",
+			"phone": "7777777777"
+		},
+		"bankCode": "011",
+		"branchCode": "004",
+		"status": "VERIFIED"
+	},
+	{
+		"id": 8,
+		"accountNumber": "01100818336",
+		"accountType": "SAVING",
+		"accountHolderName": "Ajit",
+		"bankName": "HDFC Bank",
+		"country": "DE",
+		"currency": "EUR",
+		"customer": {
+			"id": 8,
+			"firstName": "Aajit",
+			"lastName": "Singh",
+			"email": "ajittest@gamil.com",
+			"phone": "88888888"
+		},
+		"bankCode": "011",
+		"branchCode": "008",
+		"status": "DORMANT"
+	},
+	{
+		"id": 9,
+		"accountNumber": "01100618336",
+		"accountType": "CHECKING",
+		"accountHolderName": "Ankit",
+		"bankName": "HDFC Bank",
+		"country": "UK",
+		"currency": "GBP",
+		"customer": {
+			"id": 9,
+			"firstName": "Ankit",
+			"lastName": "",
+			"email": "ankittest@gamil.com",
+			"phone": "9999999999"
+		},
+		"bankCode": "011",
+		"branchCode": "006",
+		"status": "VERIFIED"
+	},
+	{
+		"id": 10,
+		"accountNumber": "01100918336",
+		"accountType": "SAVING",
+		"accountHolderName": "Satish",
+		"bankName": "HDFC Bank",
+		"country": "USA",
+		"currency": "USD",
+		"customer": {
+			"id": 10,
+			"firstName": "Satish",
+			"lastName": "Raj",
+			"email": "satishtest@gmail.com",
+			"phone": "1234567890"
+		},
+		"bankCode": "011",
+		"branchCode": "009",
+		"status": "NEW"
+	},
+	{
+		"id": 11,
+		"accountNumber": "01100718336",
+		"accountType": "CHECKING",
+		"accountHolderName": "Hamid",
+		"bankName": "HDFC Bank",
+		"country": "HK",
+		"currency": "HKD",
+		"customer": {
+			"id": 11,
+			"firstName": "Hamid",
+			"lastName": "",
+			"email": "hamidtest@gamil.com",
+			"phone": "9876543291"
+		},
+		"bankCode": "011",
+		"branchCode": "007",
+		"status": "VERIFIED"
+	},
+	{
+		"id": 12,
+		"accountNumber": "01101018336",
+		"accountType": "SAVING",
+		"accountHolderName": "Kirti",
+		"bankName": "HDFC Bank",
+		"country": "IN",
+		"currency": "INR",
+		"customer": {
+			"id": 12,
+			"firstName": "Kirti",
+			"lastName": "Singh",
+			"email": "kirtitest@gamil.com",
+			"phone": "1234987657"
+		},
+		"bankCode": "011",
+		"branchCode": "010",
+		"status": "VERIFICATION_FAILED"
+	}
+]

@@ -15,7 +15,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Validated
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-02-23T04:43:46.613Z[GMT]")
-
 public class Account {
 	
 	@JsonProperty("id")
@@ -62,7 +61,6 @@ public class Account {
 	 * @return id
 	 **/
 	@Schema(description = "")
-
 	public Long getId() {
 		return id;
 	}
@@ -82,7 +80,6 @@ public class Account {
 	 * @return accountNumber
 	 **/
 	@Schema(description = "")
-
 	public String getAccountNumber() {
 		return accountNumber;
 	}
