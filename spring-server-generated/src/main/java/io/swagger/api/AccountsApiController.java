@@ -3,10 +3,15 @@ package io.swagger.api;
 import java.util.List;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.NumberFormat;
+import org.springframework.format.annotation.NumberFormat.Style;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -37,7 +42,9 @@ public class AccountsApiController implements AccountsApi {
 	}
 
 	public ResponseEntity<Account> accountByAccountNumber(
-			@Parameter(in = ParameterIn.PATH, description = "Enter valid account number", required = true, schema = @Schema()) @Valid @PathVariable("accountNumber") String accountNumber) {
+			@Parameter(in = ParameterIn.PATH, description = "Enter valid account number", required = true, schema = @Schema()) 
+			@Valid 
+			@PathVariable("accountNumber") String accountNumber) {
 		
 		log.info("");
 		Account account = accountService.getAccountByAccountNumber(accountNumber);
